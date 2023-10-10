@@ -7,26 +7,31 @@
   <body>
     <li>
       <label for="">level</label>
-      <input style="color:black;background-color:white;" type="text"  class="check" name="test1" value="" placeholder="Input level" autocomplete="off" >
+      <input style="color:black;background-color:white;" type="text"  class="check" name="test1" value="" placeholder="level" autocomplete="off" >
       <p></p>
     </li>
     <li>
       <label for="">Word</label>
-      <input style="color:black;background-color:white;" type="text"  class="check" name="test2" value="" placeholder="Input word" autocomplete="off" >
+      <input style="color:black;background-color:white;" type="text"  class="check" name="test2" value="" placeholder="word" autocomplete="off" >
       <p></p>
     </li>
     <li>
       <label for="">Meaning</label>
-      <input style="color:black;background-color:white;" type="text"  class="check" name="test2" value="" placeholder="Input Meaning" autocomplete="off" >
+      <input style="color:black;background-color:white;" type="text"  class="check" name="test2" value="" placeholder="meaning" autocomplete="off" >
       <p></p>
     </li>
-    <li>
-      <label for="">전공</label>
-      <select style="color:black;background-color:white;" class="check" name="test3">
-      <option value="선택">전공을 선택해주세요.</option>
-      </select>
-        <p></p>
-    </li>
+    
+    <button id="Button">Add</button>
+
+    <script>
+        // Get a reference to the button element by its ID
+        var button = document.getElementById("myButton");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
     
     <button onclick="window.location.href = 'index.html';">메인페이지 돌아가기</button>
   </body>
