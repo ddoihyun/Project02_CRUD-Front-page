@@ -1,19 +1,59 @@
-/* Base styles for all screen sizes */
-/* Add your custom CSS here */
 
 /* Media query for screens smaller than 768px (e.g., mobile devices) */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Example: Reduce font size for smaller screens */
+    }
+
+    table {
+        font-size: 14px; /* Example: Reduce font size for smaller screens */
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .btn-toolbar {
+        display: block;
+    }
     /* Define styles for smaller screens here */
-    /* You can make your navigation menu collapse or adapt to small screens, adjust font sizes, etc. */
   }
   
   /* Media query for screens between 768px and 992px (e.g., tablets) */
   @media (min-width: 768px) and (max-width: 992px) {
-    /* Define styles for medium-sized screens here */
+    h1 {
+      font-size: 26px; /* Example: Reduce font size for smaller screens */
+  }
+
+  table {
+      font-size: 16px; /* Example: Reduce font size for smaller screens */
+  }
+
+  .table-responsive {
+      overflow-x: auto;
+  }
+
+  .btn-toolbar {
+      display: block;
+  }
   }
   
   /* Media query for screens larger than 992px (e.g., desktop) */
   @media (min-width: 992px) {
-    /* Define styles for larger screens here */
+    h1 {
+      font-size: 28px; /* Example: Reduce font size for smaller screens */
+  }
+
+  table {
+      font-size: 18px; /* Example: Reduce font size for smaller screens */
+  }
+
+  .table-responsive {
+      overflow-x: auto;
+  }
+
+  .btn-toolbar {
+      display: block;
+  }
   }
   
