@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Master Website</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+<style>
+  #jb-container {
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-content {
+    width: 580px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-sidebar {
+    width: 260px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-footer {
+    clear: both;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  @media ( max-width: 480px ) {
+    #jb-container {
+      width: auto;
+    }
+    #jb-content {
+      float: none;
+      width: auto;
+    }
+    #jb-sidebar {
+      float: none;
+      width: auto;
+    }
+  }
+</style>
+
+    <script>
+      function edit_confirm(){
+      if(confirm("게시물을 수정할까요?")){
+        alert("정상적으로 수정되었습니다.");}
+      else{
+        alert("취소되었습니다.");}
+      }
+      function delete_confirm(){
+      if(confirm("게시물을 삭제할까요?")){
+        alert("정상적으로 삭제되었습니다.");}
+      else{
+        alert("취소되었습니다.");}
+      }
+    </script>
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <button class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" style="color:white;background-color:#353a3f;" onclick="location.href = 'index.html';">Home</button>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a align="right" class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&nbsp;</p>
+    <div class="table-responsive" align="center" >
+      <table class="table table-striped table-sm" align="left">
+        <thead align="center">
+          <t>
+            <th>Level</th>
+            <th>Word</th>
+            <th>Meaning</th>
+            <th>Date</th>
+            <th>Menu</th>
+          </th<>
+        </thead>
+        <tbody align="center">
+          <tr>
+            <td>*</td>
+            <td>electric</td>
+            <td>전기의, 전기를 생산하는</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>pole</td>
+            <td>기둥, 장대</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>formerly</td>
+            <td>이전에, 예전에</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>transfer</td>
+            <td>옮기다, 이동하다</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>assure</td>
+            <td>안심시키다, 확신시키다</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>lone</td>
+            <td>혼자인, 단독의, 외딴</td>
+            <td>2023-10-07</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>glance</td>
+            <td>흘긋 보다, 대강 훑어보다</td>
+            <td>2023-10-07</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>stock</td>
+            <td>주식, 재고</td>
+            <td>2023-10-08</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>graceful</td>
+            <td>우아한</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>seagull</td>
+            <td>갈매기</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>tightly</td>
+            <td>단단히</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>thoughtlessly</td>
+            <td>생각 없이</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>discard</td>
+            <td>버리다</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>unfortunate</td>
+            <td>불운한</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>branch</td>
+            <td>나뭇가지</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>trim</td>
+            <td>다듬다</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>scatter</td>
+            <td>흩뿌리다, 살포하다</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>proceed</td>
+            <td>진행하다[되다]</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>reputation</td>
+            <td>평판, 명성</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>equipment</td>
+            <td>장비, 용품</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>executive</td>
+            <td>경영 간부, 임원</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>embarrassment</td>
+            <td>당황, 난처함</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>publicity</td>
+            <td>명성, 평판, 널리 알려짐, 공표</td>
+            <td>2023-10-07</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>utility</td>
+            <td>공익사업(체), 유용성</td>
+            <td>2023-10-07</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>conscious</td>
+            <td>의식하는, 자각하는</td>
+            <td>2023-10-08</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>overkill</td>
+            <td>지나침, 과잉</td>
+            <td>2023-10-08</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>stroll</td>
+            <td>거닐다, 산책하다</td>
+            <td>2023-10-08</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>eye-opener</td>
+            <td>눈이 휘둥그레질 만한 사건, 놀라운 경험</td>
+            <td>2023-10-08</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>webbed</td>
+            <td>물갈퀴가 있는</td>
+            <td>2023-10-09</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>proclaim</td>
+            <td>공언하다, 선포하다</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>***</td>
+            <td>superintendent</td>
+            <td>관리자, 감독관</td>
+            <td>2023-10-06</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>***</td>
+            <td>subordinate</td>
+            <td>부하의, 하급자의</td>
+            <td>2023-10-07</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+          <tr>
+            <td>***</td>
+            <td>crouch</td>
+            <td>쪼그리고 앉다</td>
+            <td>2023-10-10</td>
+            <td> 
+              <Button onclick="location.href = 'edit.html';"> <i class="bi bi-pencil"></i> </Button> 
+              &nbsp;
+              <Button onclick="delete_confirm()"> <i class="bi bi-trash"></i> </Button>  
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </button>
+</html>
