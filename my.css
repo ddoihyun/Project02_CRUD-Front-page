@@ -1,0 +1,19 @@
+/* Base styles for all screen sizes */
+/* Add your custom CSS here */
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    /* Define styles for smaller screens here */
+    /* You can make your navigation menu collapse or adapt to small screens, adjust font sizes, etc. */
+  }
+  
+  /* Media query for screens between 768px and 992px (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Define styles for medium-sized screens here */
+  }
+  
+  /* Media query for screens larger than 992px (e.g., desktop) */
+  @media (min-width: 992px) {
+    /* Define styles for larger screens here */
+  }
+  
